@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p ${PORT:-3000}",
+    "azurite": "node /home/vscode/.npm/_npx/0f244c8e667cf24b/node_modules/azurite/dist/src/azurite.js --location /tmp/azurite --skipApiVersionCheck --silent",
+    "seed": "ts-node --project tsconfig.json src/ref-data/seed.ts"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.31.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@xyflow/react": "^12.10.1",
+    "autoprefixer": "^10.4.27",
+    "murmur8": "^4.3.4",
+    "next": "^16.2.1",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^3.4.19",
+    "xlsx": "^0.18.5",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "typescript": "6.0.2"
+  }
+}
